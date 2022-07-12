@@ -1,0 +1,27 @@
+Ссылки:
+    https://vk-api.readthedocs.io/en/latest/
+    https://github.com/mnesina/getVkPhotos
+    https://dev.vk.com/
+    https://vk.com/dev/photos.getUserPhotos
+    https://vk.com/dev/photos.getAlbums
+    https://vk.com/dev/photos.get
+
+Чтобы обратиться к методу API ВКонтакте, нужно выполнить POST или GET запрос вида:
+    https://api.vk.com/method/METHOD?PARAMS&access_token=TOKEN&v=V
+        - METHOD (обязательно) — название метода API, к которому вы хотите обратиться. Обратите внимание: имя метода
+        чувствительно к регистру.
+        - PARAMS (не обязательно) — входные параметры соответствующего метода API, последовательность пар name=value,
+        разделенных амперсандом. Список параметров указан на странице с описанием метода.
+        - TOKEN (обязательно) — ключ доступа.
+        - V (обязательно) — используемая версия API. Использование этого параметра применяет некоторые изменения в
+        формате ответа различных методов. Сейчас актуальная версия API — 5.131. Этот параметр следует передавать со
+        всеми запросами.
+
+Примеры:
+    https://api.vk.com/method/photos.get?owner_id=194486811&album_id=239913394&
+        access_token=2ad36c1a2ad36c1a2ad36c1a9d2aae2d6022ad32ad36c1a486c8644454a292bfbdacf62&v=5.131
+
+
+
+1. создаем приложение в социальной сети ВК
+2.
